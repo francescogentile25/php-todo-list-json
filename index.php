@@ -20,10 +20,13 @@
 <body>
     <div id="app">
         <div class="container">
+
             <h1>{{title}}</h1>
             <ol class="list-group list-group-numbered">
                 <li v-for="(todo, i ) in todos" :key="i" class="list-group-item">{{todo.text}}</li>
             </ol>
+            <input type="text" class="form-control" name="todo" placeholder="Inserisci nuova task"
+                @keyup.enter="newTask" v-model="addTask">
         </div>
     </div>
     <script src="./app.js"></script>

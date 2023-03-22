@@ -4,7 +4,7 @@
     $todo_list = json_decode($todo_string,true);
     $risp =[
         'results' => $todo_list,
-        'sucess' => true
+        'sucess' => true,
     ];
     echo json_encode( $risp);
 ?>
