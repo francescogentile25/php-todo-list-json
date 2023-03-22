@@ -22,7 +22,7 @@
         <div class="container">
             <h1>{{title}}</h1>
             <ol class="list-group list-group-numbered">
-                <li v-for="(todo, i ) in todos" :key="i" class="list-group-item">{{todo}}</li>
+                <li v-for="(todo, i ) in todos" :key="i" class="list-group-item">{{todo.text}}</li>
             </ol>
         </div>
     </div>

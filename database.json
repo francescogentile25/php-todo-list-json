@@ -1,6 +1,26 @@
 [
-    "comprare pasta",
-    "comprare sugo",
-    "comprare carne",
-    "comprare pesce"
+    {
+        "text": "comprare pasta",
+        "done": true
+    },
+    {
+        "text": "comprare sugo",
+        "done": true
+    },
+    {
+        "text": "comprare carne",
+        "done": true
+    },
+    {
+        "text": "comprare pesce",
+        "done": true
+    },
+    {
+        "text": "PHP",
+        "done": true
+    },
+    {
+        "text": "Laravel",
+        "done": false
+    }
 ]
