@@ -2,7 +2,7 @@ const { createApp } = Vue;
 createApp({
     data() {
         return {
-            title: 'Ciao',
+            title: 'Ciaooo',
             todos: [],
             addTask: '',
         }
@@ -12,8 +12,8 @@ createApp({
             axios
                 .get('./server.php')
                 .then((res) => {
-                    console.log(res.data.results)
-                    this.todos = res.data.results
+                    // console.log(res.data)
+                    this.todos = res.data.text
                 })
         },
         newTask() {
@@ -28,6 +28,10 @@ createApp({
                     'Content-Type': 'multipart/form-data'
                 },
             })
+                .then((res) => {
+                    this.todos = res.data.text
+                    this.addTask = ''
+                })
         },
     },
     mounted() {
